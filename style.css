@@ -1,0 +1,171 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #000000;
+  --backgroundbody: #ffffff;
+  --text: hsl(38, 7%, 93%);
+  --textblack: #000000;
+  --sand: rgb(246, 215, 176);
+  --space: 20px;
+  --small-space: 12px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--backgroundbody);
+  color: var(--textblack);
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+header {
+  /* position: sticky; */
+  /* top: 0; */
+  background-color: var(--background);
+  border-bottom: 1px solid rgba(230, 177, 90, 100);
+}
+
+header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space);
+}
+
+h1,
+h2 {
+  font-family: "Fraunces", Georgia, "Times New Roman, Times, serif";
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  margin: 0 0 8px;
+}
+
+/* .label {
+  margin: 0;
+  color: var(--gold);
+  font-weight: 700;
+} */
+
+.logo {
+  color: var(--sand);
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.menu a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.content {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.hero .content {
+  /* min-height: 420px; */
+  /* padding: 40px 0; */
+  color: var(--textblack);
+  /* background-color: var(--backgroundbody);
+  background-image: url(images/bord1.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 400px auto;
+  background-attachment: scroll; */
+}
+
+.hero .content p,
+.hero h1,
+.hero .button {
+  max-width: 440px;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--sand);
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#hero-container {
+  padding: 18px;
+  width: 470px;
+  height: 250px;
+  background-color: white;
+  position: absolute;
+  top: 400px;
+  left: 90px;
+}
+
+/* Sections */
+
+.section {
+  padding: 40px 0 60px;
+}
+
+.gallery {
+  display: flex;
+  gap: var(--small-space);
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  padding: 10px;
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.gallery .image-card {
+  border: 1px solid rgba(230, 177, 90, 100);
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.image-card p {
+  padding: 10px;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+/* Footer */
+
+footer .content {
+  display: flex;
+  gap: 20px;
+}
+
+footer p {
+  padding-bottom: 24px;
+  color: var(--textblack);
+  font-size: 14px;
+}
