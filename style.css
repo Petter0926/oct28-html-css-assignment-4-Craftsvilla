@@ -162,10 +162,12 @@ p {
 footer .content {
   display: flex;
   gap: 20px;
+  width: auto;
+  color: var(--text);
+  background-color: var(--background);
 }
 
 footer p {
-  padding-bottom: 24px;
-  color: var(--textblack);
+  padding: 24px;
   font-size: 14px;
 }
