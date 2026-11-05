@@ -52,15 +52,14 @@ h1 {
   font-size: 30px;
 }
 
+h3 {
+  padding: 10px;
+  font-size: 18px;
+}
+
 p {
   margin: 0 0 8px;
 }
-
-/* .label {
-  margin: 0;
-  color: var(--gold);
-  font-weight: 700;
-} */
 
 .logo {
   color: var(--sand);
@@ -129,45 +128,82 @@ p {
 /* Sections */
 
 .section {
-  padding: 40px 0 60px;
+  padding: 25px 0 60px;
 }
 
-.gallery {
+.aboutus {
   display: flex;
   gap: var(--small-space);
-  flex-wrap: wrap;
 }
 
-.gallery img {
+.workshop {
+  display: flex;
+  gap: var(--small-space);
+  /* flex-wrap: wrap; */
+}
+
+.workshop img {
   padding: 10px;
   width: 320px;
   height: 220px;
   object-fit: cover;
 }
 
-.gallery .image-card {
+.workshop .image-card {
   border: 1px solid rgba(230, 177, 90, 100);
+  display: flex;
   flex-direction: column;
-  margin-top: auto;
+  height: 400px;
+  width: 320px;
 }
 
 .image-card p {
   padding: 10px;
-  font-size: 12px;
+  font-size: 16px;
   opacity: 0.9;
+  overflow-wrap: break-word;
+}
+
+.image-card .pricetag {
+  text-decoration: underline;
+  margin-top: auto;
+  font-weight: 700;
+}
+
+.content .button {
+  margin-top: 14px;
+}
+
+#gallery {
+  flex-wrap: wrap;
+}
+
+#gallery .image-card {
+  width: auto;
+  height: auto;
 }
 
 /* Footer */
 
-footer .content {
-  display: flex;
-  gap: 20px;
-  width: auto;
+footer {
   color: var(--text);
   background-color: var(--background);
 }
 
-footer p {
+footer .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: auto;
+  font-size: 14px;
+}
+
+footer .openinghours {
   padding: 24px;
   font-size: 14px;
+  list-style: none;
+}
+
+footer p {
+  padding: 24px;
 }

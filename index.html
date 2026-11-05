@@ -6,7 +6,7 @@
     <meta name="description" content="Craftsvilla Project" />
     <title>KHÅK Kunsthall</title>
     <!-- Links -->
-    <link rel="shortcut icon" href="images/mars.png" type="image/x-icon" />
+    <!-- <link rel="shortcut icon" href="images/mars.png" type="image/x-icon" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,13 +27,14 @@
             <li><a href="#aboutus">Om oss</a></li>
             <li><a href="#workshop">Workshop</a></li>
             <li><a href="#gallery">Galleri</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#contact">Kontakt*</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <!-- Main -->
+    <!-- Hero -->
     <main>
       <section class="hero">
         <img src="images/bord1.jpg" alt="Bilde av bord med malerier på" />
@@ -43,7 +44,37 @@
             KHÅK Kunsthall befinner seg i Keiser Wilhems Gate i Ålesund. Her kan
             du oppleve utstillinger av samtidskunst og originale malerier.
           </p>
-          <a class="button" href="#gallery">Våre Workshops</a>
+          <a class="button" href="#workshop">Våre Workshops</a>
+        </div>
+      </section>
+
+      <!-- Om oss -->
+      <section class="section">
+        <div class="content">
+          <h2>Om oss</h2>
+          <div class="aboutus" id="aboutus">
+            <p>
+              KHÅK Kunsthall (uttalt "kåk" som i bolig) er et kunstgalleri som
+              samler samtidskunst og grafikk på ett sted. Et kurert utvalg av
+              kunstsamlingen til forretningsmannen Kjell Holm er utstilt i
+              lokalet, tilgjengelig for alle å nyte og se. Galleriet tilbyr også
+              flere sorter malerier og grafikker som kan kjøpes der eller over
+              nettet.
+              <br />
+              <br />
+              Hos KHÅK kan du finne artister som: Gunnar Berg, Frits Thaulow,
+              Adolph Tiedemann og Nikolai Astrup.
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d330.93660252884695!2d6.160978496489985!3d62.47141512747412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4616da46ebdba9ef%3A0xe001803069246021!2sKH%C3%85K%20Kunsthall!5e1!3m2!1sno!2sno!4v1793882922529!5m2!1sno!2sno"
+              width="320"
+              height="320"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
         </div>
       </section>
 
@@ -51,26 +82,59 @@
       <section class="section">
         <div class="content">
           <h2>Workshop</h2>
-          <div class="gallery" id="gallery">
+          <div class="workshop" id="workshop">
             <article class="image-card">
               <img src="images/fjell.jpg" alt="Bilde av mosaikkunst" />
-              <p>Mosaikkunst</p>
+              <h3>Mosaikkunst</h3>
               <p>Ramme, treplate i A4, små fargede steiner, lim</p>
-              <p>400 kr</p>
+              <p class="pricetag">400 kr</p>
             </article>
 
             <article class="image-card">
               <img src="images/hage.jpg" alt="Bilde av akvarellmaling" />
-              <p>Akvarellmaling</p>
+              <h3>Akvarellmaling</h3>
               <p>Ramme, akvarellpapir med designmal, akvarellfarger, pensler</p>
-              <p>200 kr</p>
+              <p class="pricetag">200 kr</p>
             </article>
 
             <article class="image-card">
               <img src="images/skog.jpg" alt="Bilde av lerretsmaling" />
-              <p>Lerretsmaling</p>
+              <h3>Lerretsmaling</h3>
               <p>Ramme, akrylpapir med designmal, akrylfarger, pensler</p>
-              <p>300 kr</p>
+              <p class="pricetag">300 kr</p>
+            </article>
+          </div>
+          <a class="button" href="order.html">Bestill</a>
+        </div>
+      </section>
+
+      <!-- Galleri -->
+      <section class="section">
+        <div class="content">
+          <h2>Galleri</h2>
+          <div class="workshop" id="gallery">
+            <article class="image-card">
+              <img src="images/bord2.jpg" alt="Bilde av mosaikkunst" />
+            </article>
+
+            <article class="image-card">
+              <img src="images/bord3.jpg" alt="Bilde av akvarellmaling" />
+            </article>
+
+            <article class="image-card">
+              <img src="images/maleri_gård.jpg" alt="Bilde av lerretsmaling" />
+            </article>
+
+            <article class="image-card">
+              <img src="images/maleri_natt.jpg" alt="Bilde av lerretsmaling" />
+            </article>
+
+            <article class="image-card">
+              <img src="images/kjellholm.jpg" alt="Bilde av lerretsmaling" />
+            </article>
+
+            <article class="image-card">
+              <img src="images/kuer.jpg" alt="Bilde av lerretsmaling" />
             </article>
           </div>
         </div>
@@ -80,8 +144,13 @@
     <!-- Footer -->
     <footer>
       <div class="content">
+        <ul class="openinghours">
+          <li>Åpningstider:</li>
+          <li>Tirsdag - torsdag: 12 - 17</li>
+          <li>Fredag - søndag: 12 - 16</li>
+          <li>Mandag: stengt</li>
+        </ul>
         <p>Bilder: Tatt av Petter Th. Røiseth</p>
-        <p>Ikon: Laget av Magnific</p>
       </div>
     </footer>
   </body>
