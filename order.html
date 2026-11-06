@@ -25,21 +25,51 @@
       </div>
     </header>
 
-    <!-- Order Form -->
+    <!-- Information -->
     <main>
       <section class="section">
         <div class="content">
-          <h2>Om oss</h2>
-          <div class="aboutus" id="aboutus">
+          <h2>Bestillingsskjema</h2>
+          <div class="info" id="info">
             <p>
-              KHÅK Kunsthall (uttalt "kåk" som i bolig) er et kunstgalleri som
-              samler samtidskunst og grafikk på ett sted. Et kurert utvalg av
-              kunstsamlingen til forretningsmannen Kjell Holm er utstilt i
-              lokalet, tilgjengelig for alle å nyte og se. Galleriet tilbyr også
-              flere sorter malerier og grafikker som kan kjøpes der eller over
-              nettet.
+              Fyll inn dine opplysninger i skjemaet under og så trykk "Fullfør
+              bestilling".
             </p>
           </div>
+        </div>
+      </section>
+
+      <!-- Orderform -->
+      <section class="content">
+        <form class="orderform" action="">
+          <!-- Personal info -->
+          <label for="">Fornavn:</label> <br />
+          <input type="text" placeholder="..." /> <br />
+          <label for="">Etternavn:</label> <br />
+          <input type="text" placeholder="..." /> <br />
+          <label for="">Adresse:</label> <br />
+          <input type="text" placeholder="..." /> <br />
+          <label for="">Telefonnummer:</label> <br />
+          <input type="tel" placeholder="..." /> <br />
+          <label for="">Epost-adresse:</label> <br />
+          <input type="email" placeholder="..." /> <br /><br />
+          <!-- Workshop info -->
+          <label for="">Antall deltakere:</label> <br />
+          <input type="number" name="participants" id="participants" /> <br />
+          <br />
+          <label for="">Ønsket dato:</label> <br />
+          <input type="date" name="date" id="date" /> <br />
+          <br />
+          <label for="">Kommentar:</label> <br />
+          <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </form>
+      </section>
+
+      <!-- Buttons -->
+      <section class="content">
+        <div class="orderbuttons">
+          <a class="button" id="back" href="index.html">Tilbake</a>
+          <a class="button" href="#workshop">Fullfør bestilling</a>
         </div>
       </section>
     </main>

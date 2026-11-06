@@ -82,28 +82,7 @@ p {
 .content {
   width: 1000px;
   margin: 0 auto;
-}
-
-.hero .content {
-  /* min-height: 420px; */
-  /* padding: 40px 0; */
   color: var(--textblack);
-  /* background-color: var(--backgroundbody);
-  background-image: url(images/bord1.jpg);
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 400px auto;
-  background-attachment: scroll; */
-}
-
-.hero .content p,
-.hero h1,
-.hero .button {
-  max-width: 440px;
-}
-
-.hero img {
-  width: 100%;
 }
 
 .button {
@@ -115,95 +94,39 @@ p {
   text-decoration: none;
 }
 
-#hero-container {
-  padding: 18px;
-  width: 470px;
-  height: 250px;
-  background-color: white;
-  position: absolute;
-  top: 400px;
-  left: 90px;
-}
-
 /* Sections */
 
 .section {
-  padding: 25px 0 60px;
+  padding: 25px 0 25px;
 }
 
-.aboutus {
+.info {
   display: flex;
   gap: var(--small-space);
-}
-
-.workshop {
-  display: flex;
-  gap: var(--small-space);
-  /* flex-wrap: wrap; */
-}
-
-.workshop img {
-  padding: 10px;
-  width: 320px;
-  height: 220px;
-  object-fit: cover;
-}
-
-.workshop .image-card {
-  border: 1px solid rgba(230, 177, 90, 100);
-  display: flex;
-  flex-direction: column;
-  height: 400px;
-  width: 320px;
-}
-
-.image-card p {
-  padding: 10px;
-  font-size: 16px;
-  opacity: 0.9;
-  overflow-wrap: break-word;
-}
-
-.image-card .pricetag {
-  text-decoration: underline;
-  margin-top: auto;
-  font-weight: 700;
 }
 
 .content .button {
   margin-top: 14px;
 }
 
-#gallery {
-  flex-wrap: wrap;
+.orderform {
+  font-size: 20px;
 }
 
-#gallery .image-card {
-  width: auto;
-  height: auto;
+input {
+  width: 30%;
+  font-size: 20px;
 }
 
-/* Footer */
-
-footer {
-  color: var(--text);
-  background-color: var(--background);
+::placeholder {
+  opacity: 30%;
 }
 
-footer .content {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  width: auto;
-  font-size: 14px;
+.orderbuttons {
+  padding-bottom: 25px;
 }
 
-footer .openinghours {
-  padding: 24px;
-  font-size: 14px;
-  list-style: none;
-}
-
-footer p {
-  padding: 24px;
+#back {
+  background-color: darkslategray;
+  color: white;
 }
