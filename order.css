@@ -113,13 +113,39 @@ p {
   font-size: 20px;
 }
 
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
 input {
   width: 30%;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 ::placeholder {
   opacity: 30%;
+}
+
+select {
+  font-size: 18px;
+}
+
+textarea {
+  resize: none;
+  font-size: 18px;
+}
+
+#orderfinish {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--sand);
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  width: 194px;
+  height: 54px;
 }
 
 .orderbuttons {

@@ -43,24 +43,40 @@
       <section class="content">
         <form class="orderform" action="">
           <!-- Personal info -->
-          <label for="">Fornavn:</label> <br />
-          <input type="text" placeholder="..." /> <br />
-          <label for="">Etternavn:</label> <br />
-          <input type="text" placeholder="..." /> <br />
-          <label for="">Adresse:</label> <br />
-          <input type="text" placeholder="..." /> <br />
-          <label for="">Telefonnummer:</label> <br />
-          <input type="tel" placeholder="..." /> <br />
-          <label for="">Epost-adresse:</label> <br />
-          <input type="email" placeholder="..." /> <br /><br />
+          <label for="">Fornavn:</label>
+          <input type="text" placeholder="..." />
+          <label for="">Etternavn:</label>
+          <input type="text" placeholder="..." />
+          <label for="">Adresse:</label>
+          <input type="text" placeholder="..." />
+          <label for="">Telefonnummer:</label>
+          <input type="tel" placeholder="..." />
+          <label for="">Epost-adresse:</label>
+          <input type="email" placeholder="..." /> <br />
+          <br />
           <!-- Workshop info -->
-          <label for="">Antall deltakere:</label> <br />
-          <input type="number" name="participants" id="participants" /> <br />
+          <label for="">Workshop:</label>
+          <select name="workshop" id="workshop">
+            <option value="">Mosaikkunst</option>
+            <option value="">Akvarellmaling</option>
+            <option value="">Lerretsmaling</option>
+          </select>
           <br />
-          <label for="">Ønsket dato:</label> <br />
-          <input type="date" name="date" id="date" /> <br />
           <br />
-          <label for="">Kommentar:</label> <br />
+          <label for="">Antall deltakere:</label>
+          <input
+            type="number"
+            name="participants"
+            id="participants"
+            placeholder="..."
+          />
+          <br />
+          <br />
+          <label for="">Ønsket dato:</label>
+          <input type="date" name="date" id="date" />
+          <br />
+          <br />
+          <label for="">Kommentar:</label>
           <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
         </form>
       </section>
@@ -69,7 +85,8 @@
       <section class="content">
         <div class="orderbuttons">
           <a class="button" id="back" href="index.html">Tilbake</a>
-          <a class="button" href="#workshop">Fullfør bestilling</a>
+          <!-- <a class="button" href="#workshop">Fullfør bestilling</a> -->
+          <input id="orderfinish" type="submit" value="Fullfør bestilling" />
         </div>
       </section>
     </main>
